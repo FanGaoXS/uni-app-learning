@@ -73,7 +73,15 @@
 			"path" : "pages/list/list",
 			"style" :{
 				"navigationBarTitleText": "列表页",
-				"enablePullDownRefresh": true
+				"enablePullDownRefresh": true,
+				"onReachBottomDistance": 200
+			}
+		},
+		{
+			"path" : "pages/request/request",
+			"style" :{
+				"navigationBarTitleText": "网络请求",
+				"enablePullDownRefresh": false
 			}
 		}
 	],
@@ -135,8 +143,12 @@
 				"path":"pages/event/event"
 			},
 			{
-				"name":"调试list列表页下拉",
+				"name":"调试list列表页",
 				"path":"pages/list/list"
+			},
+			{
+				"name":"调试request网络请求",
+				"path":"pages/request/request"
 			}
 		]
 	}
