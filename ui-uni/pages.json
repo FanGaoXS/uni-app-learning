@@ -1,0 +1,143 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{ //首页
+			"path" : "pages/home/home",
+			"style" :{
+				"navigationBarTitleText": "首页",
+				"enablePullDownRefresh": true
+			}
+		},
+		{ //通讯录
+			"path" : "pages/contact/contact",
+			"style" :{
+				"navigationBarTitleText": "通讯录",
+				"enablePullDownRefresh": true
+			}	
+		},
+		{ //我的
+			"path" : "pages/profile/profile",
+			"style" :{
+				"navigationBarTitleText": "我的",
+				"enablePullDownRefresh": true
+			}
+		},
+		{ //登录页
+			"path" : "pages/login/login",
+			"style" :{
+				"navigationBarTitleText": "登录",
+				"enablePullDownRefresh": true,
+				"h5": {
+					"pullToRefresh": {
+						"color":"#F1F1F1"
+					}
+				}
+			}
+		},
+		{//详情页
+			"path" : "pages/detail/detail",
+			"style" :{
+				"navigationBarTitleText": "详情页",
+				"enablePullDownRefresh": false
+			}
+		},
+		{//text组件
+			"path" : "pages/text/text",
+			"style" :{
+				"navigationBarTitleText": "text组件说明",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path" : "pages/view/view",
+			"style" :{
+				"navigationBarTitleText": "view组件说明",
+				"enablePullDownRefresh": false
+			}
+				
+		},
+		{
+			"path" : "pages/rpx/rpx",
+			"style" :{
+				"navigationBarTitleText": "rpx样式说明",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path" : "pages/event/event",
+			"style" :{
+				"navigationBarTitleText": "event事件",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path" : "pages/list/list",
+			"style" :{
+				"navigationBarTitleText": "列表页",
+				"enablePullDownRefresh": true
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "hello,uni-app!",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"position":"bottom",
+		"list": [
+			{
+				"pagePath":"pages/home/home",
+				"text":"首页"
+			},
+			{
+				"pagePath":"pages/contact/contact",
+				"text":"通讯录"
+			},
+			{
+				"pagePath":"pages/profile/profile",
+				"text":"我的"
+			}
+		]
+	},
+	"condition": { //小程序调试工具
+		"current": 0,
+		"list": [
+			{
+				"name":"调试首页",
+				"path":"pages/home/home",
+				"query":"id=80&name=测试"
+			},
+			{
+				"name":"调试详情页",
+				"path":"pages/detail/detail",
+				"query":"id=80&name=test"
+			},
+			{
+				"name":"调试我的页面",
+				"path":"pages/profile/profile",
+				"query":"id=80"
+			},
+			{
+				"name":"调试text组件",
+				"path":"pages/text/text"
+			},
+			{
+				"name":"调试view组件",
+				"path":"pages/view/view"
+			},
+			{
+				"name":"调试rpx样式",
+				"path":"pages/rpx/rpx"
+			},
+			{
+				"name":"调试event事件",
+				"path":"pages/event/event"
+			},
+			{
+				"name":"调试list列表页下拉",
+				"path":"pages/list/list"
+			}
+		]
+	}
+}
